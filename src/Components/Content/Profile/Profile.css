@@ -1,0 +1,20 @@
+.btn-labeled-left {
+    padding-left: 3.12506rem;
+    position: relative;
+}
+.btn-labeled-left>b {
+    left: -1px;
+    border-top-left-radius: .1875rem;
+    border-bottom-left-radius: .1875rem;
+}
+.btn-labeled>b {
+    position: absolute;
+    top: -1px;
+    background-color: rgba(0,0,0,.15);
+    display: block;
+    line-height: 1;
+    padding: .62503rem;
+}
+.btn-labeled>b>i {
+    top: 0;
+}

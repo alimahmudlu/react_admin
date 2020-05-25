@@ -1,7 +1,8 @@
 import React from "react";
 import "./Sidebar.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faHome, faPager} from "@fortawesome/free-solid-svg-icons";
+import {faBars, faHome, faPager, faPhone} from "@fortawesome/free-solid-svg-icons";
+import {Link} from "react-router-dom";
 
 export default function Sidebar() {
     return (
@@ -12,44 +13,60 @@ export default function Sidebar() {
                         <ul className="nav nav-sidebar" data-nav-type="accordion">
                             <li className="nav-item-header d-none">
                                 <div className="text-uppercase font-size-xs line-height-xs">Main</div>
-                                <i className="icon-menu" title="Main"></i></li>
+                                <i className="icon-menu" title="Main"> </i>
+                            </li>
                             <li className="nav-item">
-                                <a href="#" className="nav-link">
+                                <Link to="/" className="nav-link">
                                     <FontAwesomeIcon icon={faHome} className="icon"/>
                                     <span>
 									    Dashboard
 								    </span>
-                                </a>
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/contact" className="nav-link">
+                                    <FontAwesomeIcon icon={faPhone} className="icon"/>
+                                    <span>
+									    Contact
+								    </span>
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/navbar" className="nav-link">
+                                    <FontAwesomeIcon icon={faBars} className="icon"/>
+                                    <span>
+									    Navbar
+								    </span>
+                                </Link>
                             </li>
                             <li className="nav-item nav-item-submenu">
-                                <a href="#" className="nav-link collapsed" data-toggle="collapse" href="#submenu1" role="button" aria-expanded="false" aria-controls="submenu1">
+                                <a className="nav-link collapsed" data-toggle="collapse" href="#subscribe_menu" role="button" aria-expanded="false" aria-controls="subscribe_menu">
                                     <FontAwesomeIcon icon={faPager} className="icon"/>
                                     <span>
-                                        Layouts
+                                        Subscribe
                                     </span>
                                 </a>
-                                <ul className="nav nav-group-sub collapse" id="submenu1">
+                                <ul className="nav nav-group-sub collapse" id="subscribe_menu">
                                     <li className="nav-item">
-                                        <a href="" className="nav-link">
-                                            Default layout
-                                        </a>
+                                        <Link to="/subscribe" className="nav-link">
+                                            Subscribe List
+                                        </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="" className="nav-link">
-                                            Default layout
-                                            <i className="fas fa-chevron-right"></i>
-                                        </a>
+                                        <Link to="/subscribe_edit" className="nav-link">
+                                            Edit Subscribe
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <a href="#" className="nav-link">
+                                <Link to="#" className="nav-link">
                                     <FontAwesomeIcon icon={faPager} className="icon"/>
                                     <span>
                                         Changelog
                                     </span>
                                     <span className="badge bg-blue-400 align-self-center ml-auto">2.3</span>
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>

@@ -44,3 +44,73 @@ code {
     -ms-flex-positive: 1;
     flex-grow: 1;
 }
+
+.d-unset {
+    display: unset !important;
+}
+
+.label-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.form-group.required > .label-group > label::after {
+    content: "*";
+    color: red;
+
+}
+
+.vertical-center {
+    align-items: center;
+}
+.horizontal-center {
+    justify-content: center;
+}
+
+.form-group-feedback {
+    position: relative;
+}
+.form-group-feedback-left .form-control {
+    padding-left: 2.75rem;
+}
+.form-group-feedback-left .form-control-feedback {
+    left: 0;
+}
+.form-control-feedback {
+    position: absolute;
+    top: 0;
+    color: #333;
+    padding-left: .875rem;
+    padding-right: .875rem;
+    line-height: calc(1.5385em + .875rem + 2px);
+    min-width: 1rem;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5385em + .875rem + 2px);
+    padding: .4375rem .875rem;
+    font-size: .8125rem;
+    font-weight: 400;
+    line-height: 1.5385;
+    color: #333;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ddd;
+    border-radius: .1875rem;
+    box-shadow: 0 0 0 0 transparent;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+textarea.form-control {
+    resize: none;
+}
+.form-group-feedback-right .form-control {
+    padding-right: 2.75rem;
+}
+.form-group-feedback-right .form-control-feedback {
+    right: 0;
+}
+.table th, .table td {
+    vertical-align: middle;
+}
