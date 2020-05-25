@@ -1,0 +1,8 @@
+.footer {
+    color: rgba(255,255,255,.9);
+    background-color: #324148;
+    border-top-color: rgba(255,255,255,.1);
+    padding-top: 1.00002rem;
+    padding-bottom: 1.00002rem;
+    text-align: center;
+}

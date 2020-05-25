@@ -1,0 +1,116 @@
+.navbar {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0 1.25rem;
+}
+.navbar-dark {
+     color: rgba(255,255,255,.9);
+     background-color: #324148;
+     border-bottom-color: rgba(255,255,255,.1);
+ }
+.navbar-nav {
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+.navbar-nav .dropdown-menu {
+    position: absolute;
+}
+.navbar-brand {
+    padding-top: 1.00002rem;
+    padding-bottom: 1.00002rem;
+    margin-right: 1.25rem;
+    font-size: 0;
+    min-width: 15.625rem;
+}
+.navbar-brand img {
+    height: 1rem;
+    display: block;
+}
+.navbar-nav-link {
+    color: rgba(255,255,255,.9);
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding: .875rem 1rem;
+    outline: 0;
+    transition: all ease-in-out .15s;
+}
+.navbar-dark .navbar-nav-link:focus, .navbar-dark .navbar-nav-link:hover {
+    color: #fff;
+    background-color: rgba(255,255,255,.1);
+}
+.navbar-dark .active>.navbar-nav-link,
+.navbar-dark .navbar-nav-link.active,
+.navbar-dark .navbar-nav-link.show,
+.navbar-dark .show>.navbar-nav-link {
+    color: #fff;
+    background-color: rgba(255,255,255,.1);
+}
+.dropdown-user .navbar-nav-link,
+.dropdown-user .navbar-nav-link>span {
+    padding-top: .4375rem;
+    padding-bottom: .4375rem;
+}
+.dropdown-menu {
+    min-width: 11.25rem;
+    font-size: .8125rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,.1);
+}
+.dropdown-header>i,
+.dropdown-header>.icon,
+.dropdown-header>img,
+.dropdown-item>i,
+.dropdown-item>.icon,
+.dropdown-item>img {
+    margin-right: 1rem;
+}
+.dropdown-item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    outline: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    margin-bottom: 0;
+    transition: background-color ease-in-out .15s,color ease-in-out .15s;
+    width: 100%;
+    padding: .5rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #333;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+.dropdown-header>i,
+.dropdown-item>i,
+.dropdown-header>.icon,
+.dropdown-item>.icon {
+    top: 0;
+}
+
+@media (max-width: 992px) {
+    .dropdown-user .navbar-nav-link > span {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .navbar-brand {
+        min-width: unset;
+    }
+}
