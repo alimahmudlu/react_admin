@@ -55,6 +55,16 @@ export default function Contact() {
                             </div>
                             <textarea className="form-control" id="sectiondescription" placeholder="Bölmə Təsviri" required> </textarea>
                         </div>
+                        <div className="form-group required">
+                            <div className="label-group">
+                                <label htmlFor="contactmail">Qəbul edəcən mail ünvanı</label>
+                                <div className="custom-control custom-switch">
+                                    {/*<input type="checkbox" className="custom-control-input" id="contactmail_switch"/>*/}
+                                    {/*<label className="custom-control-label" htmlFor="contactmail_switch"> </label>*/}
+                                </div>
+                            </div>
+                            <input type="email" className="form-control" id="contactmail" placeholder="Qəbul edəcən mail ünvanı" required/>
+                        </div>
                         <div className="form-group d-flex">
                             <button type="submit" className="btn btn-primary ml-auto">
                                 Yadda saxla

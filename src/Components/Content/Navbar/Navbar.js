@@ -2,6 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBars} from "@fortawesome/free-solid-svg-icons";
+import {faTelegramPlane} from "@fortawesome/free-brands-svg-icons";
 
 export default function Navbar() {
     return (
@@ -23,7 +24,47 @@ export default function Navbar() {
                     </div>
                 </div>
                 <div className="card-body">
-                    navbar
+                    <form>
+                        <div className="row">
+                            <div className="col-lg-4">
+                                <div className="form-group required">
+                                    <div className="label-group">
+                                        <label htmlFor="navbar_logo">Sayt Loqosu</label>
+                                        <div className="custom-control custom-switch">
+                                            <input type="checkbox" className="custom-control-input" id="navbar_logo_switch"/>
+                                            <label className="custom-control-label" htmlFor="navbar_logo_switch"> </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="form-group required">
+                                    <div className="label-group">
+                                        <label htmlFor="navbar_menu">Menyu</label>
+                                        <div className="custom-control custom-switch">
+                                            <input type="checkbox" className="custom-control-input" id="navbar_menu_switch"/>
+                                            <label className="custom-control-label" htmlFor="navbar_menu_switch"> </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="form-group required">
+                                    <div className="label-group">
+                                        <label htmlFor="navbar_lang">Sayt Dilləri</label>
+                                        <div className="custom-control custom-switch">
+                                            <input type="checkbox" className="custom-control-input" id="navbar_lang_switch"/>
+                                            <label className="custom-control-label" htmlFor="navbar_lang_switch"> </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-12">
+                                <div className="form-group d-flex">
+                                    <button type="submit" className="btn btn-primary ml-auto">
+                                        Yadda saxla
+                                        <FontAwesomeIcon icon={faTelegramPlane} className="icon ml-2"/>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </>

@@ -12,6 +12,9 @@ import Subscribe from "./Subscribe/Subscribe";
 import SubscribeEdit from "./Subscribe/Subscribe-edit";
 import Contact from "./Contact/Contact";
 import Navbar from "./Navbar/Navbar";
+import Pages from "./Pages/Pages";
+import Category from "./Category/Category";
+import Post from "./Post/Post";
 
 export default function Content() {
     return (
@@ -46,6 +49,15 @@ export default function Content() {
                     </Route>
                     <Route path="/navbar">
                         <Navbar/>
+                    </Route>
+                    <Route path="/pages">
+                        <Pages/>
+                    </Route>
+                    <Route path="/category">
+                        <Category/>
+                    </Route>
+                    <Route path="/post">
+                        <Post/>
                     </Route>
                 </div>
             </div>

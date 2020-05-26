@@ -164,6 +164,19 @@ export default function Settings() {
                             </div>
                             <textarea className="form-control" id="sitecopyrightdescription" placeholder="Müəllif Hüquqları Təsviri" required> </textarea>
                         </div>
+                        <div className="form-group required">
+                            <div className="label-group">
+                                <label htmlFor="sitelogo">Sayt Loqosu</label>
+                                <div className="custom-control custom-switch">
+                                    {/*<input type="checkbox" className="custom-control-input" id="sitelogo_switch"  />*/}
+                                    {/*<label className="custom-control-label" htmlFor="sitelogo_switch"> </label>*/}
+                                </div>
+                            </div>
+                            <div className="custom-file">
+                                <input type="file" className="custom-file-input" id="sitelogo" required />
+                                <label className="custom-file-label" htmlFor="sitelogo">Sayt Loqosunu seçin...</label>
+                            </div>
+                        </div>
                         <div className="form-group">
                             <div className="label-group">
                                 <label htmlFor="site-facebook">Facebook</label>
