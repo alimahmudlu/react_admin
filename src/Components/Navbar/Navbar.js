@@ -17,7 +17,7 @@ export default function Navbar(props) {
         <>
             <nav className="navbar navbar-dark">
                 <div className="navbar-brand">
-                    <Link to="#" className="d-inline-block">
+                    <Link to="/" className="d-inline-block">
                         <img src={Logo} alt="Admin panel logo"/>
                     </Link>
                 </div>
