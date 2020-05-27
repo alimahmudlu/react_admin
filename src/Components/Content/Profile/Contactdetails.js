@@ -1,8 +1,7 @@
 import React from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faPhone} from "@fortawesome/free-solid-svg-icons";
+import {faPhone, faTimes} from "@fortawesome/free-solid-svg-icons";
 import {faFacebook, faTelegramPlane} from "@fortawesome/free-brands-svg-icons";
-import {Route} from "react-router-dom";
 
 export default function Contactdetails() {
     return (
@@ -123,7 +122,11 @@ export default function Contactdetails() {
                             <input type="youtube" className="form-control" id="twitter" placeholder="Twitter"/>
                         </div>
                         <div className="form-group d-flex">
-                            <button type="submit" className="btn btn-primary ml-auto">
+                            <button type="reset" className="btn btn-danger ml-auto">
+                                İmtina
+                                <FontAwesomeIcon icon={faTimes} className="icon ml-2"/>
+                            </button>
+                            <button type="submit" className="btn btn-info ml-auto">
                                 Yadda saxla
                                 <FontAwesomeIcon icon={faTelegramPlane} className="icon ml-2"/>
                             </button>

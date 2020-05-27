@@ -1,7 +1,15 @@
 import React from "react";
 import "./Sidebar.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faBars, faCopy, faHome, faPager, faPhone} from "@fortawesome/free-solid-svg-icons";
+import {
+    faBars,
+    faBell,
+    faCopy,
+    faFolder,
+    faHome,
+    faNewspaper,
+    faPhone
+} from "@fortawesome/free-solid-svg-icons";
 import {Link} from "react-router-dom";
 import {faFacebook} from "@fortawesome/free-brands-svg-icons";
 
@@ -24,38 +32,22 @@ export default function Sidebar() {
 								    </span>
                                 </Link>
                             </li>
-                            <li className="nav-item">
-                                <Link to="/contact" className="nav-link">
-                                    <FontAwesomeIcon icon={faPhone} className="icon"/>
-                                    <span>
-									    Contact
-								    </span>
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/navbar" className="nav-link">
-                                    <FontAwesomeIcon icon={faBars} className="icon"/>
-                                    <span>
-									    Navbar
-								    </span>
-                                </Link>
-                            </li>
                             <li className="nav-item nav-item-submenu">
-                                <a className="nav-link collapsed" data-toggle="collapse" href="#post_menu" role="button" aria-expanded="false" aria-controls="post_menu">
-                                    <FontAwesomeIcon icon={faCopy} className="icon"/>
+                                <a className="nav-link collapsed" data-toggle="collapse" href="#category_menu" role="button" aria-expanded="false" aria-controls="category_menu">
+                                    <FontAwesomeIcon icon={faFolder} className="icon"/>
                                     <span>
-                                        Posts
+                                        Category
                                     </span>
                                 </a>
-                                <ul className="nav nav-group-sub collapse" id="post_menu">
+                                <ul className="nav nav-group-sub collapse" id="category_menu">
                                     <li className="nav-item">
-                                        <Link to="/post" className="nav-link">
-                                            Post List
+                                        <Link to="/category" className="nav-link">
+                                            Category List
                                         </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to="/post/add" className="nav-link">
-                                            Add Post
+                                        <Link to="/category/add" className="nav-link">
+                                            Add Category
                                         </Link>
                                     </li>
                                 </ul>
@@ -81,28 +73,38 @@ export default function Sidebar() {
                                 </ul>
                             </li>
                             <li className="nav-item nav-item-submenu">
-                                <a className="nav-link collapsed" data-toggle="collapse" href="#category_menu" role="button" aria-expanded="false" aria-controls="category_menu">
-                                    <FontAwesomeIcon icon={faCopy} className="icon"/>
+                                <a className="nav-link collapsed" data-toggle="collapse" href="#post_menu" role="button" aria-expanded="false" aria-controls="post_menu">
+                                    <FontAwesomeIcon icon={faNewspaper} className="icon"/>
                                     <span>
-                                        Category
+                                        Posts
                                     </span>
                                 </a>
-                                <ul className="nav nav-group-sub collapse" id="category_menu">
+                                <ul className="nav nav-group-sub collapse" id="post_menu">
                                     <li className="nav-item">
-                                        <Link to="/category" className="nav-link">
-                                            Category List
+                                        <Link to="/post" className="nav-link">
+                                            Post List
                                         </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to="/category/add" className="nav-link">
-                                            Add Category
+                                        <Link to="/post/add" className="nav-link">
+                                            Add Post
+                                        </Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link to="/post/category" className="nav-link">
+                                            Post Kateqoiyası Listi
+                                        </Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link to="/post/categoryadd" className="nav-link">
+                                            Post Kateqoiyası əlavə et
                                         </Link>
                                     </li>
                                 </ul>
                             </li>
                             <li className="nav-item nav-item-submenu">
                                 <a className="nav-link collapsed" data-toggle="collapse" href="#subscribe_menu" role="button" aria-expanded="false" aria-controls="subscribe_menu">
-                                    <FontAwesomeIcon icon={faPager} className="icon"/>
+                                    <FontAwesomeIcon icon={faBell} className="icon"/>
                                     <span>
                                         Subscribe
                                     </span>
@@ -114,12 +116,29 @@ export default function Sidebar() {
                                         </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to="/subscribe_edit" className="nav-link">
+                                        <Link to="/subscribe/edit" className="nav-link">
                                             Edit Subscribe
                                         </Link>
                                     </li>
                                 </ul>
                             </li>
+                            <li className="nav-item">
+                                <Link to="/contact" className="nav-link">
+                                    <FontAwesomeIcon icon={faPhone} className="icon"/>
+                                    <span>
+									    Contact
+								    </span>
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/navbar" className="nav-link">
+                                    <FontAwesomeIcon icon={faBars} className="icon"/>
+                                    <span>
+									    Navbar
+								    </span>
+                                </Link>
+                            </li>
+                            {/*
                             <li className="nav-item">
                                 <Link to="#" className="nav-link">
                                     <FontAwesomeIcon icon={faPager} className="icon"/>
@@ -129,6 +148,7 @@ export default function Sidebar() {
                                     <span className="badge bg-blue-400 align-self-center ml-auto">2.3</span>
                                 </Link>
                             </li>
+                            */}
                         </ul>
                     </div>
 

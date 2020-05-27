@@ -2,21 +2,42 @@ import React from "react";
 import "./Content.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faHome} from "@fortawesome/free-solid-svg-icons";
+import {Link} from "react-router-dom";
 
-export default function Breadcrumb() {
+
+export default function Breadcrumb(props) {
+    const {breadcrumb_childitem, breadcrumb_activeitem} = props;
     return (
         <>
-            <nav aria-label="breadcrumb">
+            {/*<nav aria-label="breadcrumb">
                 <ol className="breadcrumb">
-                    <a href="#" className="breadcrumb-item">
+                    <Link to="/" className="breadcrumb-item">
                         <FontAwesomeIcon icon={faHome} className="icon breadcrumb-item--icon"/>
                         Home
-                    </a>
-                    <li className="breadcrumb-item active" aria-current="page">
-                        Dashboard
-                    </li>
+                    </Link>
+                    {breadcrumb_childitem === "" ? "" :
+                        <>
+                            {breadcrumb_childitem.map((item) => {
+                                return (
+                                    <>
+                                        <li className="breadcrumb-item" aria-current="page">
+                                            <Link to={item.page_link}>
+                                                {item.page_name}
+                                            </Link>
+                                        </li>
+                                    </>
+                                )
+                            })}
+                        </>
+                    }
+
+                    {breadcrumb_activeitem.length === 0 ? "" :
+                        <li className="breadcrumb-item" aria-current="page">
+                            {breadcrumb_activeitem}
+                        </li>
+                    }
                 </ol>
-            </nav>
+            </nav>*/}
         </>
     )
 }

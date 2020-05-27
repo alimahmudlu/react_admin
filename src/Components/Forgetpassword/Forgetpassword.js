@@ -1,11 +1,6 @@
 import React from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {
-    faQuestion,
-    faSignInAlt,
-    faUnlockAlt,
-    faUser
-} from "@fortawesome/free-solid-svg-icons";
+import {faQuestion, faUser} from "@fortawesome/free-solid-svg-icons";
 import {Link} from "react-router-dom";
 
 export default function Forgetpassword() {

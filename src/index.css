@@ -114,3 +114,7 @@ textarea.form-control {
 .table th, .table td {
     vertical-align: middle;
 }
+
+.form-group.d-flex > .btn.btn-danger.ml-auto + .btn.btn-info.ml-auto {
+    margin-left: 0.5rem !important;
+}

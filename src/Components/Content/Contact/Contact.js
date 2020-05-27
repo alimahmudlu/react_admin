@@ -1,77 +1,139 @@
 import React from "react";
-import "./Contact.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faAddressBook} from "@fortawesome/free-solid-svg-icons";
+import {faExclamationTriangle, faTimes} from "@fortawesome/free-solid-svg-icons";
 import {faTelegramPlane} from "@fortawesome/free-brands-svg-icons";
+import Pageheader from "../Pageheader";
+import Breadcrumb from "../Breadcrumb";
+import SunEditor, {buttonList} from "suneditor-react";
 
 export default function Contact() {
+    function handleImageUploadBefore(files, info){
+        console.log(files, info)
+    }
+    function handleImageUpload(targetImgElement, index, state, imageInfo, remainingFilesCount){
+        console.log(targetImgElement, index, state, imageInfo, remainingFilesCount)
+    }
+    function handleImageUploadError(errorMessage, result){
+        console.log(errorMessage, result)
+    }
+    function handleVideoUploadBefore(files, info){
+        console.log(files, info)
+    }
+    function handleVideoUpload(targetElement, index, state, info, remainingFilesCount){
+        console.log(targetElement, index, state, info, remainingFilesCount)
+    }
+    function handleVideoUploadError(errorMessage, result){
+        console.log(errorMessage, result)
+    }
+    function handleAudioUploadBefore(files, info){
+        console.log(files, info)
+    }
+    function handleAudioUpload(targetElement, index, state, info, remainingFilesCount){
+        console.log(targetElement, index, state, info, remainingFilesCount)
+    }
+    function handleAudioUploadError(errorMessage, result){
+        console.log(errorMessage, result)
+    }
+    function handlePaste(e, cleanData, maxCharCount){
+        console.log(e, cleanData, maxCharCount)
+    }
     return (
         <>
-            <div className="card">
-                <div className="card-header">
-                    <div className="card-header-body">
-                        <div className="card-header-body-image">
-                            <FontAwesomeIcon icon={faAddressBook} className="icon card-header-body-image--svg"/>
-                        </div>
-                        <div className="card-header-body-content">
-                            <h1 className="card-header-body-content--header">
-                                Contact
-                            </h1>
-                            <span className="card-header-body-content--description">
-                                Contact
-                            </span>
+            <Pageheader
+                pageheader_header="Contact"
+                pageheader_description="Contact Edit"
+                pageheader_icon="fas fa-address-book"
+            />
+            <Breadcrumb/>
+            <div className="content">
+                <div className="card">
+                    <div className="card-header">
+                        <div className="card-header-body">
+                            <div className="card-header-body-image">
+                                <FontAwesomeIcon icon={faExclamationTriangle} className="icon card-header-body-image--svg"/>
+                            </div>
+                            <div className="card-header-body-content">
+                                <h1 className="card-header-body-content--header">
+                                    Əsas Məlumatlar
+                                </h1>
+                                <span className="card-header-body-content--description">
+                                    Vacib sahələr doldurulmalıdır
+                                </span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="card-body">
-                    <form>
-                        <div className="form-group required">
-                            <div className="label-group">
-                                <label htmlFor="menuheader">Menyu Başlığı</label>
-                                <div className="custom-control custom-switch">
-                                    {/*<input type="checkbox" className="custom-control-input" id="menuheader_switch"/>*/}
-                                    {/*<label className="custom-control-label" htmlFor="menuheader_switch"> </label>*/}
+                    <div className="card-body">
+                        <form>
+                            <div className="form-group required">
+                                <div className="label-group">
+                                    <label htmlFor="menuheader">Menyu Başlığı</label>
+                                    <div className="custom-control custom-switch">
+                                        {/*<input type="checkbox" className="custom-control-input" id="menuheader_switch"/>*/}
+                                        {/*<label className="custom-control-label" htmlFor="menuheader_switch"> </label>*/}
+                                    </div>
                                 </div>
+                                <input type="name" className="form-control" id="menuheader" placeholder="Menyu Başlığı" required/>
                             </div>
-                            <input type="name" className="form-control" id="menuheader" placeholder="Menyu Başlığı" required/>
-                        </div>
-                        <div className="form-group required">
-                            <div className="label-group">
-                                <label htmlFor="sectionheader">Bölmə Başlığı</label>
-                                <div className="custom-control custom-switch">
-                                    {/*<input type="checkbox" className="custom-control-input" id="sectionheader_switch"/>*/}
-                                    {/*<label className="custom-control-label" htmlFor="sectionheader_switch"> </label>*/}
+                            <div className="form-group required">
+                                <div className="label-group">
+                                    <label htmlFor="sectionheader">Bölmə Başlığı</label>
+                                    <div className="custom-control custom-switch">
+                                        {/*<input type="checkbox" className="custom-control-input" id="sectionheader_switch"/>*/}
+                                        {/*<label className="custom-control-label" htmlFor="sectionheader_switch"> </label>*/}
+                                    </div>
                                 </div>
+                                <input type="name" className="form-control" id="sectionheader" placeholder="Bölmə Başlığı" required/>
                             </div>
-                            <input type="name" className="form-control" id="sectionheader" placeholder="Bölmə Başlığı" required/>
-                        </div>
-                        <div className="form-group required">
-                            <div className="label-group">
-                                <label htmlFor="sectiondescription">Bölmə Təsviri</label>
-                                <div className="custom-control custom-switch">
-                                    {/*<input type="checkbox" className="custom-control-input" id="sectiondescription_switch"/>*/}
-                                    {/*<label className="custom-control-label" htmlFor="sectiondescription_switch"> </label>*/}
+                            <div className="form-group required">
+                                <div className="label-group">
+                                    <label htmlFor="sectiondescription">Bölmə Təsviri</label>
+                                    <div className="custom-control custom-switch">
+                                        {/*<input type="checkbox" className="custom-control-input" id="sectiondescription_switch"/>*/}
+                                        {/*<label className="custom-control-label" htmlFor="sectiondescription_switch"> </label>*/}
+                                    </div>
                                 </div>
+                                {/*<textarea className="form-control" id="sectiondescription" placeholder="Bölmə Təsviri" required> </textarea>*/}
+                                <SunEditor
+                                    enableToolbar={true}
+                                    showToolbar={true}
+                                    onImageUploadBefore={handleImageUploadBefore}
+                                    onImageUpload={handleImageUpload}
+                                    onImageUploadError={handleImageUploadError}
+                                    onVideoUploadBefore={handleVideoUploadBefore}
+                                    onVideoUpload={handleVideoUpload}
+                                    onVideoUploadError={handleVideoUploadError}
+                                    onAudioUploadBefore={handleAudioUploadBefore}
+                                    onAudioUpload={handleAudioUpload}
+                                    onAudioUploadError={handleAudioUploadError}
+                                    onPaste={handlePaste}
+                                    setOptions={{
+                                        height:300,
+                                        buttonList: buttonList.formatting
+                                    }}
+                                />
                             </div>
-                            <textarea className="form-control" id="sectiondescription" placeholder="Bölmə Təsviri" required> </textarea>
-                        </div>
-                        <div className="form-group required">
-                            <div className="label-group">
-                                <label htmlFor="contactmail">Qəbul edəcən mail ünvanı</label>
-                                <div className="custom-control custom-switch">
-                                    {/*<input type="checkbox" className="custom-control-input" id="contactmail_switch"/>*/}
-                                    {/*<label className="custom-control-label" htmlFor="contactmail_switch"> </label>*/}
+                            <div className="form-group required">
+                                <div className="label-group">
+                                    <label htmlFor="contactmail">Qəbul edəcən mail ünvanı</label>
+                                    <div className="custom-control custom-switch">
+                                        {/*<input type="checkbox" className="custom-control-input" id="contactmail_switch"/>*/}
+                                        {/*<label className="custom-control-label" htmlFor="contactmail_switch"> </label>*/}
+                                    </div>
                                 </div>
+                                <input type="email" className="form-control" id="contactmail" placeholder="Qəbul edəcən mail ünvanı" required/>
                             </div>
-                            <input type="email" className="form-control" id="contactmail" placeholder="Qəbul edəcən mail ünvanı" required/>
-                        </div>
-                        <div className="form-group d-flex">
-                            <button type="submit" className="btn btn-primary ml-auto">
-                                Yadda saxla
-                                <FontAwesomeIcon icon={faTelegramPlane} className="icon ml-2"/>
-                            </button>
-                        </div>
-                    </form>
+                            <div className="form-group d-flex">
+                                <button type="reset" className="btn btn-danger ml-auto">
+                                    İmtina
+                                    <FontAwesomeIcon icon={faTimes} className="icon ml-2"/>
+                                </button>
+                                <button type="submit" className="btn btn-info ml-auto">
+                                    Yadda saxla
+                                    <FontAwesomeIcon icon={faTelegramPlane} className="icon ml-2"/>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </>

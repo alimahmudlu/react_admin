@@ -17,29 +17,29 @@ export default function Navbar(props) {
         <>
             <nav className="navbar navbar-dark">
                 <div className="navbar-brand">
-                    <a href="#" className="d-inline-block">
-                        <img src={Logo}/>
-                    </a>
+                    <Link to="#" className="d-inline-block">
+                        <img src={Logo} alt="Admin panel logo"/>
+                    </Link>
                 </div>
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item">
-                        <a href="#" onClick={props.toggle} className="navbar-nav-link sidebar-control sidebar-main-toggle">
+                        <Link to="#" onClick={props.toggle} className="navbar-nav-link sidebar-control sidebar-main-toggle">
                             <FontAwesomeIcon icon={faBars} className="icon"/>
-                        </a>
+                        </Link>
                     </li>
                     <li className="nav-item">
-                        <a href="#" className="navbar-nav-link sidebar-control sidebar-main-toggle">
+                        <Link to="#" className="navbar-nav-link sidebar-control sidebar-main-toggle">
                             <FontAwesomeIcon icon={faGlobeAmericas} className="icon"/>
-                        </a>
+                        </Link>
                     </li>
                 </ul>
 
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item dropdown dropdown-user">
-                        <a href="#" className="navbar-nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <Link to="#" className="navbar-nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                             <img src={Person} className="rounded-circle mr-2" height="34" alt=""/>
                             <span>Əli Mahmudlu</span>
-                        </a>
+                        </Link>
 
                         <div className="dropdown-menu dropdown-menu-right">
                             <Link to="/profile" className="dropdown-item">
@@ -51,10 +51,10 @@ export default function Navbar(props) {
                                 Əsas tənzimləmələr
                             </Link>
                             <div className="dropdown-divider"> </div>
-                            <a href="#" className="dropdown-item">
+                            <Link to="#" className="dropdown-item">
                                 <FontAwesomeIcon icon={faSignOutAlt} className="icon"/>
                                 Çıxış
-                            </a>
+                            </Link>
                         </div>
                     </li>
                 </ul>

@@ -1,7 +1,5 @@
 import React from "react";
-import {Link, Route} from "react-router-dom";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faUserPlus, faUsers} from "@fortawesome/free-solid-svg-icons";
+import {Route} from "react-router-dom";
 import Categorylist from "./Categorylist";
 import CategoryAdd from "./CategoryAdd";
 import CategoryEdit from "./CategoryEdit";

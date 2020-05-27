@@ -1,7 +1,7 @@
 import React from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEye} from "@fortawesome/free-solid-svg-icons";
-import {faTelegramPlane} from "@fortawesome/free-brands-svg-icons";
+import {Link} from "react-router-dom";
 
 export default function Previewprofile() {
     return (
@@ -118,9 +118,9 @@ export default function Previewprofile() {
                                     </div>
                                 </div>
                                 <p className="label-header">
-                                    <a href="#">
+                                    <Link to="#">
                                         www.facebook.com/alimahmudlu
-                                    </a>
+                                    </Link>
                                 </p>
                             </div>
                         </div>
@@ -134,9 +134,9 @@ export default function Previewprofile() {
                                     </div>
                                 </div>
                                 <p className="label-header">
-                                    <a href="#">
+                                    <Link to="#">
                                         www.instagram.com/alimahmudlu
-                                    </a>
+                                    </Link>
                                 </p>
                             </div>
                         </div>
@@ -150,9 +150,9 @@ export default function Previewprofile() {
                                     </div>
                                 </div>
                                 <p className="label-header">
-                                    <a href="#">
+                                    <Link to="#">
                                         www.youtube.com/alimahmudlu
-                                    </a>
+                                    </Link>
                                 </p>
                             </div>
                         </div>
@@ -166,9 +166,9 @@ export default function Previewprofile() {
                                     </div>
                                 </div>
                                 <p className="label-header">
-                                    <a href="#">
+                                    <Link to="#">
                                         www.linkedin.com/alimahmudlu
-                                    </a>
+                                    </Link>
                                 </p>
                             </div>
                         </div>
@@ -182,9 +182,9 @@ export default function Previewprofile() {
                                     </div>
                                 </div>
                                 <p className="label-header">
-                                    <a href="#">
+                                    <Link to="#">
                                         www.twitter.com/alimahmudlu
-                                    </a>
+                                    </Link>
                                 </p>
                             </div>
                         </div>

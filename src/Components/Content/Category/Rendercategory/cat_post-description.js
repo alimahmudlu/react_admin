@@ -1,6 +1,38 @@
 import React from "react";
+import SunEditor, {buttonList} from "suneditor-react";
+import "./sun.css";
 
 export default function cat_postdescription() {
+    function handleImageUploadBefore(files, info){
+        console.log(files, info)
+    }
+    function handleImageUpload(targetImgElement, index, state, imageInfo, remainingFilesCount){
+        console.log(targetImgElement, index, state, imageInfo, remainingFilesCount)
+    }
+    function handleImageUploadError(errorMessage, result){
+        console.log(errorMessage, result)
+    }
+    function handleVideoUploadBefore(files, info){
+        console.log(files, info)
+    }
+    function handleVideoUpload(targetElement, index, state, info, remainingFilesCount){
+        console.log(targetElement, index, state, info, remainingFilesCount)
+    }
+    function handleVideoUploadError(errorMessage, result){
+        console.log(errorMessage, result)
+    }
+    function handleAudioUploadBefore(files, info){
+        console.log(files, info)
+    }
+    function handleAudioUpload(targetElement, index, state, info, remainingFilesCount){
+        console.log(targetElement, index, state, info, remainingFilesCount)
+    }
+    function handleAudioUploadError(errorMessage, result){
+        console.log(errorMessage, result)
+    }
+    function handlePaste(e, cleanData, maxCharCount){
+        console.log(e, cleanData, maxCharCount)
+    }
     return (
         <>
             <div className="form-group required">
@@ -11,7 +43,22 @@ export default function cat_postdescription() {
                         {/*<label className="custom-control-label" htmlFor="pg_cat_post-description_switch"> </label>*/}
                     </div>
                 </div>
-                <input type="name" className="form-control" id="pg_cat_post-description" placeholder="Postun təsviri" required/>
+                <SunEditor
+                    onImageUploadBefore={handleImageUploadBefore}
+                    onImageUpload={handleImageUpload}
+                    onImageUploadError={handleImageUploadError}
+                    onVideoUploadBefore={handleVideoUploadBefore}
+                    onVideoUpload={handleVideoUpload}
+                    onVideoUploadError={handleVideoUploadError}
+                    onAudioUploadBefore={handleAudioUploadBefore}
+                    onAudioUpload={handleAudioUpload}
+                    onAudioUploadError={handleAudioUploadError}
+                    onPaste={handlePaste}
+                    setOptions={{
+                        height: 500,
+                        buttonList: buttonList.complex
+                    }}
+                />
             </div>
         </>
     )
