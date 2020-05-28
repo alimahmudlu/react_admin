@@ -60,6 +60,12 @@ export default function Contact() {
                                     Vacib sahələr doldurulmalıdır
                                 </span>
                             </div>
+                            <div className="card-header-body-footer">
+                                <div className="custom-control custom-switch custom-switch-big">
+                                    <input type="checkbox" className="custom-control-input" id="contact_visible"/>
+                                    <label className="custom-control-label" htmlFor="contact_visible"> </label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="card-body">

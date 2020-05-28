@@ -47,21 +47,27 @@ export default function PagesAdd() {
                                     Vacib sahələr doldurulmalıdır
                                 </span>
                             </div>
+                            <div className="card-header-body-footer">
+                                <div className="custom-control custom-switch custom-switch-big">
+                                    <input type="checkbox" className="custom-control-input" id="page_visible"/>
+                                    <label className="custom-control-label" htmlFor="page_visible"> </label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="card-body">
                         <div className="form-group required">
                             <div className="label-group">
-                                <label htmlFor="category_select">Kateqoriya</label>
+                                <label htmlFor="page_category_select">Kateqoriya</label>
                                 <div className="custom-control custom-switch">
                                     {/*<input type="checkbox" className="custom-control-input" id="category_select_switch"/>*/}
                                     {/*<label className="custom-control-label" htmlFor="category_select_switch"> </label>*/}
                                 </div>
                             </div>
                             <select className="form-control custom-select" id="category_select" defaultValue={pagecategory} required onChange={lol} placeholder="salam">
-                                {jsona.map((item) => {
+                                {jsona.map((item,index) => {
                                     return (
-                                        <option value={item.category_slug}>{item.category_name}</option>
+                                        <option key={index} value={item.category_slug}>{item.category_name}</option>
                                     )
                                 })}
                             </select>
@@ -134,6 +140,18 @@ export default function PagesAdd() {
                                 <option value="Navbar">Navbar</option>
                                 <option value="bothbar">Hər ikisində</option>
                             </select>
+                        </div>
+                        <div className="form-group required">
+                            <div className="custom-control custom-checkbox">
+                                <input type="checkbox" className="custom-control-input" id="page_subscribe_visible" required/>
+                                <label className="custom-control-label" htmlFor="page_subscribe_visible">Abunə ol</label>
+                            </div>
+                        </div>
+                        <div className="form-group required">
+                            <div className="custom-control custom-checkbox">
+                                <input type="checkbox" className="custom-control-input" id="page_contact_visible" required/>
+                                <label className="custom-control-label" htmlFor="page_contact_visible">Əlaqə</label>
+                            </div>
                         </div>
                         <div className="form-group d-flex">
                             <button type="reset" className="btn btn-danger ml-auto">

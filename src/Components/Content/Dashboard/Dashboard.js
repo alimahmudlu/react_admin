@@ -13,7 +13,7 @@ import {Calendar} from "react-calendar";
 import "./Calendar.css";
 import Clock from 'react-live-clock';
 import { AnalyticsDashboard } from 'react-analytics-charts';
-import { SessionsByDateChart, SessionsGeoChart } from 'react-analytics-charts';
+import { ActiveUsersChart, SessionsByDeviceCategoryChart, SessionsByUserTypeChart, SessionsByDateChart, SessionsGeoChart, SessionsBySourceChart, PageViewsPerPathChart, SessionsByHourChart,  } from 'react-analytics-charts';
 import person from "../../../person.jpg";
 import Pageheader from "../Pageheader";
 import Breadcrumb from "../Breadcrumb";
@@ -27,7 +27,7 @@ export default function Dashboard() {
                 pageheader_description="The revolution control panel"
                 pageheader_icon="fas fa-home"
             />
-            <Breadcrumb breadcrumb_childitem={[{"page_name":"salam", "page_link": "/asd/sad/"},{"page_name":"salam2", "page_link": "/asd/sadasasas/"},]} breadcrumb_activeitem="a"/>
+            <Breadcrumb/>
             <div className="content">
                 <div className="row">
                     <div className="col-lg-6">
@@ -55,43 +55,20 @@ export default function Dashboard() {
 
                         </div>
                         <div className="card">
-                            <div className="card-header">
+                            <div className="card-body">
                                 <div className="card-header-body">
                                     <div className="card-header-body-image">
-                                        <FontAwesomeIcon icon={faChartLine} className="icon card-header-body-image--svg"/>
+                                        <img src={person} alt="Person profile pictures - Ali Mahmudlu" className="card-header-body-image--img"/>
                                     </div>
                                     <div className="card-header-body-content">
                                         <h1 className="card-header-body-content--header">
-                                            Google Analtics
+                                            Əli Mahmudlu
                                         </h1>
                                         <span className="card-header-body-content--description">
-                                            Google Analtics Chats
+                                            Admin
                                         </span>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="card-body">
-                                <AnalyticsDashboard
-                                    authOptions={{ clientId: "123456789012-abc123def456ghi789jkl012mno345p.apps.googleusercontent.com" }}
-                                    renderCharts={(gapi, viewId) => {
-                                        return (
-                                            <div>
-                                                <SessionsByDateChart
-                                                    gapi={gapi}
-                                                    viewId="ga:218202115"
-                                                    showPageViews
-                                                    showUsers
-                                                />
-                                                <SessionsGeoChart
-                                                    gapi={gapi}
-                                                    viewId="ga:218202115"
-                                                    showPageViews
-                                                />
-                                                ... More charts here ...
-                                            </div>
-                                        );
-                                    }}
-                                />
                             </div>
 
                         </div>
@@ -118,23 +95,97 @@ export default function Dashboard() {
                             </div>
 
                         </div>
+                    </div>
+                    <div className="col-lg-12">
                         <div className="card">
-                            <div className="card-body">
+                            <div className="card-header">
                                 <div className="card-header-body">
                                     <div className="card-header-body-image">
-                                        <img src={person} alt="Person profile pictures - Ali Mahmudlu" className="card-header-body-image--img"/>
+                                        <FontAwesomeIcon icon={faChartLine} className="icon card-header-body-image--svg"/>
                                     </div>
                                     <div className="card-header-body-content">
                                         <h1 className="card-header-body-content--header">
-                                            Əli Mahmudlu
+                                            Google Analtics
                                         </h1>
                                         <span className="card-header-body-content--description">
-                                            Admin
+                                            Google Analtics Chats
                                         </span>
                                     </div>
                                 </div>
                             </div>
+                            <div className="card-body">
+                                <AnalyticsDashboard
+                                    authOptions={{ clientId: "15703957385-kbn4mj7h51oeo5lhcgbhlm8v6vapnurt.apps.googleusercontent.com" }}
+                                    renderCharts={(gapi, viewId) => {
+                                        const chartStyles = {
+                                            width: "100%",
+                                            minHeight: "450px"
+                                        }
+                                        return (
+                                            <>
 
+                                                <div className="row">
+                                                    <div className="col-md-6">
+                                                        <SessionsByDateChart
+                                                            gapi={gapi}
+                                                            viewId={viewId}
+                                                            style={chartStyles}
+                                                            showPageViews
+                                                            showUsers
+                                                        />
+                                                    </div>
+                                                    <div className="col-md-6">
+                                                        <SessionsGeoChart
+                                                            gapi={gapi}
+                                                            viewId={viewId}
+                                                            style={chartStyles}
+                                                            showPageViews
+                                                        />
+                                                    </div>
+                                                    <div className="col-md-6">
+                                                        <SessionsBySourceChart
+                                                            gapi={gapi}
+                                                            viewId={viewId}
+                                                            style={chartStyles}
+                                                        />
+                                                    </div>
+                                                    <div className="col-md-6">
+                                                        <SessionsByHourChart
+                                                            gapi={gapi}
+                                                            viewId={viewId}
+                                                            style={chartStyles}
+                                                        />
+                                                    </div>
+                                                    <div className="col-md-6">
+                                                        <PageViewsPerPathChart
+                                                            gapi={gapi}
+                                                            viewId={viewId}
+                                                        />
+                                                    </div>
+                                                    <div className="col-md-6">
+                                                        <SessionsByUserTypeChart
+                                                            gapi={gapi}
+                                                            viewId={viewId}
+                                                        />
+                                                    </div>
+                                                    <div className="col-md-6">
+                                                        <SessionsByDeviceCategoryChart
+                                                            gapi={gapi}
+                                                            viewId={viewId}
+                                                        />
+                                                    </div>
+                                                    <div className="col-md-6">
+                                                        <ActiveUsersChart
+                                                            gapi={gapi}
+                                                            viewId={viewId}
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </>
+                                        )
+                                    }}
+                                />
+                            </div>
                         </div>
                     </div>
                     <div className="col-lg-12">

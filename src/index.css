@@ -118,3 +118,69 @@ textarea.form-control {
 .form-group.d-flex > .btn.btn-danger.ml-auto + .btn.btn-info.ml-auto {
     margin-left: 0.5rem !important;
 }
+
+
+.form-control:focus {
+    border-color: #80bdff;
+    outline: 0;
+     box-shadow: unset;
+}
+
+.custom-switch-big {
+    padding-left: 60px;
+    height: 35px;
+}
+.custom-control-input:not(:disabled):active ~ .custom-control-label::before {
+    background-color: #dc3545;
+    border: #dc3545 solid 1px;
+}
+.custom-control-input:not(:disabled):active:checked ~ .custom-control-label::before {
+    border-color: #17a2b8;
+    background-color: #17a2b8;
+}
+.custom-switch .custom-control-label::before {
+    background-color: #dc3545;
+    border: #dc3545 solid 1px;
+}
+.custom-control-input:checked ~ .custom-control-label::before {
+    color: #fff;
+    border-color: #17a2b8;
+    background-color: #17a2b8;
+}
+
+.custom-switch .custom-control-label::before {
+    border-radius: 2px;
+}
+.custom-switch .custom-control-label::after {
+    border-radius: 2px;
+    -webkit-transition: all .1s linear;
+    transition: all .1s linear;
+}
+.custom-switch-big .custom-control-label::before {
+    top: 0;
+    left: -60px;
+    width: 60px;
+    height: 35px;
+}
+.custom-switch-big .custom-control-label::after {
+    top: calc(0px + 2px);
+    left: calc(-60px + 2px);
+    width: 30px;
+    height: 31px;
+    background-image: url("./switch.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.custom-switch .custom-control-label::after {
+    background-color: #fff;
+}
+.custom-switch-big .custom-control-input:checked ~ .custom-control-label::after {
+    transform: translateX(26px);
+}
+.custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: unset;
+}
+.custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+     border-color: unset;
+     border: unset;
+}

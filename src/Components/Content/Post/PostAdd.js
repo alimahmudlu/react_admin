@@ -52,6 +52,12 @@ export default function PostAdd() {
                                     Vacib sahələr doldurulmalıdır
                                 </span>
                             </div>
+                            <div className="card-header-body-footer">
+                                <div className="custom-control custom-switch custom-switch-big">
+                                    <input type="checkbox" className="custom-control-input" id="post_visible"/>
+                                    <label className="custom-control-label" htmlFor="post_visible"> </label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="card-body">

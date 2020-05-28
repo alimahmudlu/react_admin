@@ -1,6 +1,6 @@
 import React from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faExclamationTriangle} from "@fortawesome/free-solid-svg-icons";
+import {faExclamationTriangle, faTimes} from "@fortawesome/free-solid-svg-icons";
 import {faTelegramPlane} from "@fortawesome/free-brands-svg-icons";
 import Pageheader from "../Pageheader";
 import Breadcrumb from "../Breadcrumb";
@@ -65,7 +65,11 @@ export default function Navbar() {
                                 </div>
                                 <div className="col-lg-12">
                                     <div className="form-group d-flex">
-                                        <button type="submit" className="btn btn-primary ml-auto">
+                                        <button type="submit" className="btn btn-danger ml-auto">
+                                            Imtina
+                                            <FontAwesomeIcon icon={faTimes} className="icon ml-2"/>
+                                        </button>
+                                        <button type="submit" className="btn btn-info ml-auto">
                                             Yadda saxla
                                             <FontAwesomeIcon icon={faTelegramPlane} className="icon ml-2"/>
                                         </button>

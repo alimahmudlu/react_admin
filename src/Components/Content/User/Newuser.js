@@ -38,8 +38,14 @@ export default function Newuser() {
                                                 Əsas Məlumatlar
                                             </h1>
                                             <span className="card-header-body-content--description">
-                                    Vacib sahələr doldurulmalıdır.
-                                </span>
+                                                Vacib sahələr doldurulmalıdır.
+                                            </span>
+                                        </div>
+                                        <div className="card-header-body-footer">
+                                            <div className="custom-control custom-switch custom-switch-big">
+                                                <input type="checkbox" className="custom-control-input" id="user_visible"/>
+                                                <label className="custom-control-label" htmlFor="user_visible"> </label>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

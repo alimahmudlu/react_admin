@@ -44,13 +44,19 @@ export default function PagesEdit() {
                                     Vacib xanalar doldurulmalıdır
                                 </span>
                             </div>
+                            <div className="card-header-body-footer">
+                                <div className="custom-control custom-switch custom-switch-big">
+                                    <input type="checkbox" className="custom-control-input" id="page_visible"/>
+                                    <label className="custom-control-label" htmlFor="page_visible"> </label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="card-body">
                         <form>
                             <div className="form-group required">
                                 <div className="label-group">
-                                    <label htmlFor="category_select">Kateqoriya</label>
+                                    <label htmlFor="page_category_select">Kateqoriya</label>
                                     <div className="custom-control custom-switch">
                                         {/*<input type="checkbox" className="custom-control-input" id="category_select_switch"/>*/}
                                         {/*<label className="custom-control-label" htmlFor="category_select_switch"> </label>*/}
