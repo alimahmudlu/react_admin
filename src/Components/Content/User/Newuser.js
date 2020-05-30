@@ -1,12 +1,49 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faExclamationTriangle, faPhone, faTimes, faUserCog, faUsers} from "@fortawesome/free-solid-svg-icons";
+import {faExclamationTriangle, faPen, faPhone, faTimes, faUserCog, faUsers} from "@fortawesome/free-solid-svg-icons";
 import {faFacebook, faTelegramPlane} from "@fortawesome/free-brands-svg-icons";
 import Pageheader from "../Pageheader";
 import Breadcrumb from "../Breadcrumb";
 import {Link} from "react-router-dom";
+import defaultimg from "../../../defaultimg.png";
 
 export default function Newuser() {
+
+    const [selectedFile, setSelectedFile] = useState()
+    const [preview, setPreview] = useState(defaultimg)
+
+    useEffect(() => {
+        if (!selectedFile) {
+            return
+        }
+        const objectUrl = URL.createObjectURL(selectedFile)
+        setPreview(objectUrl)
+
+        return () => URL.revokeObjectURL(objectUrl)
+    }, [selectedFile])
+
+    function onSelectFile(e) {
+        if (!e.target.files || e.target.files.length === 0) {
+            setSelectedFile()
+            return
+        }
+
+        setSelectedFile(e.target.files[0])
+    }
+
+    function onRemove(e) {
+        setSelectedFile(undefined)
+        setPreview(defaultimg)
+
+        var inputfile = document.getElementById("userProfileInput");
+        inputfile.value = null;
+
+        if (!selectedFile) {
+            setPreview(defaultimg)
+            return
+        }
+
+    }
     return (
         <>
             <Pageheader
@@ -112,6 +149,35 @@ export default function Newuser() {
                                     </div>
                                 </div>
                                 <div className="card-body">
+                                    <div className="form-group required">
+                                        <div className="label-group">
+                                            <label htmlFor="userProfileInput">Profil şəkli</label>
+                                            <div className="custom-control custom-switch">
+                                                {/*<input type="checkbox" className="custom-control-input" id="fullname_switch"  />*/}
+                                                {/*<label className="custom-control-label" htmlFor="fullname_switch"> </label>*/}
+                                            </div>
+                                        </div>
+                                        <div className="custom-file d-none">
+                                            <input  type="file" accept="image/*" className="custom-file-input" id="userProfileInput" onChange={onSelectFile} required />
+                                            <label className="custom-file-label" htmlFor="userProfileInput">Choose file...</label>
+                                        </div>
+
+                                        <div className="profile-image">
+                                            <img src={preview} alt="Person - Ali Mahmudlu profile pic" className="profile-image--img"/>
+                                            <div className="profile-image-control">
+                                                <label htmlFor="userProfileInput" className="profile-image-control-item">
+                                                    <FontAwesomeIcon icon={faPen}/>
+                                                </label>
+                                                {preview !== defaultimg &&
+                                                <span className="profile-image-control-item" onClick={onRemove}>
+                                                    <FontAwesomeIcon icon={faTimes}/>
+                                                </span>
+                                                }
+
+
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div className="form-group required">
                                         <div className="label-group">
                                             <label htmlFor="fullname">Ad, Soyad</label>

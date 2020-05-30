@@ -5,7 +5,7 @@
 }
 .sidebar:not(.sidebar-component) {
     position: fixed;
-    top: 50px;
+    top: 0px;
     bottom: 0;
     box-sizing: content-box;
     z-index: 1040;

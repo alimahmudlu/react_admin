@@ -1,0 +1,35 @@
+[type=button], [type=reset], [type=submit], button {
+    -webkit-appearance: inherit;
+}
+
+.scrolltotop {
+    opacity: 0.3;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: none;
+    transition: all 0.5s;
+    width: 40px;
+    height: 40px;
+    background: #17a2b8;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 0 0 5px #f2f3f7;
+    line-height: 40px;
+    float: left;
+    color: #fff;
+    z-index: 9999;
+    animation: fadeIn 0.3s ease-in-out 0.3s both;
+    cursor: pointer;
+}
+.scrolltotop:hover {
+    opacity: 1;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

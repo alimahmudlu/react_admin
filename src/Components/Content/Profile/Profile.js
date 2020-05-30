@@ -10,6 +10,7 @@ import Primarydetails from "./Primarydetails";
 import Contactdetails from "./Contactdetails";
 import Pageheader from "../Pageheader";
 import Breadcrumb from "../Breadcrumb";
+import Lolla from "./lol";
 
 export default function Profile() {
     return (
