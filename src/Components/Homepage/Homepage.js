@@ -16,7 +16,7 @@ function Homepage() {
     }
     return (
         <>
-            <Router forceRefresh={false}>
+            <Router forceRefresh={false} basename="/">
                 <Switch>
                     <Route path="/login">
                         <Login/>
