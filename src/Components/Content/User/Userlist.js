@@ -4,10 +4,15 @@ import {faCalendarAlt, faEye, faPen, faUserPlus} from "@fortawesome/free-solid-s
 import {Link} from "react-router-dom";
 import Pageheader from "../Pageheader";
 import Breadcrumb from "../Breadcrumb";
+import {Helmet} from "react-helmet";
+
 
 export default function Userlist() {
     return (
         <>
+            <Helmet>
+                <title>İstifadəçilərin Listi | Admin Panel</title>
+            </Helmet>
             <Pageheader
                 pageheader_header="İstifadəçilər"
                 pageheader_description="İstifadəçilərin listi"

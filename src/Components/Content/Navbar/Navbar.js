@@ -4,10 +4,15 @@ import {faExclamationTriangle, faTimes} from "@fortawesome/free-solid-svg-icons"
 import {faTelegramPlane} from "@fortawesome/free-brands-svg-icons";
 import Pageheader from "../Pageheader";
 import Breadcrumb from "../Breadcrumb";
+import {Helmet} from "react-helmet";
+
 
 export default function Navbar() {
     return (
         <>
+            <Helmet>
+                <title>Navbar | Admin Panel</title>
+            </Helmet>
             <Pageheader
                 pageheader_header="Navbar"
                 pageheader_description="Daxili səhifələr üçün Navbar"

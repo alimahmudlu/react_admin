@@ -5,6 +5,7 @@ import {faTelegramPlane} from "@fortawesome/free-brands-svg-icons";
 import Pageheader from "../Pageheader";
 import Breadcrumb from "../Breadcrumb";
 import SunEditor, {buttonList} from "suneditor-react";
+import {Helmet} from "react-helmet";
 
 export default function Contact() {
     function handleImageUploadBefore(files, info){
@@ -39,6 +40,9 @@ export default function Contact() {
     }
     return (
         <>
+            <Helmet>
+                <title>Əlaqə | Admin Panel</title>
+            </Helmet>
             <Pageheader
                 pageheader_header="Əlaqə səhifəsini tənzimlə"
                 pageheader_description="Əlaqə səhifəsini tənzimlərkən diqqətli olun. Etdiyiniz səhv sayt strukturunu poza bilər!"

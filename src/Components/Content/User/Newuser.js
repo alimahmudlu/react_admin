@@ -6,6 +6,8 @@ import Pageheader from "../Pageheader";
 import Breadcrumb from "../Breadcrumb";
 import {Link} from "react-router-dom";
 import defaultimg from "../../../defaultimg.png";
+import {Helmet} from "react-helmet";
+
 
 export default function Newuser() {
 
@@ -46,6 +48,9 @@ export default function Newuser() {
     }
     return (
         <>
+            <Helmet>
+                <title>Yeni istifadəçi | Admin Panel</title>
+            </Helmet>
             <Pageheader
                 pageheader_header="İstifadəçi"
                 pageheader_description="İstifadəçi əlavə et"

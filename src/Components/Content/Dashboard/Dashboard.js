@@ -18,10 +18,14 @@ import person from "../../../person.jpg";
 import Pageheader from "../Pageheader";
 import Breadcrumb from "../Breadcrumb";
 import {Link} from "react-router-dom";
+import {Helmet} from "react-helmet";
 
 export default function Dashboard() {
     return (
         <>
+            <Helmet>
+                <title>Dashboard | Admin Panel</title>
+            </Helmet>
             <Pageheader
                 pageheader_header="Dashboard"
                 pageheader_description="The revolution control panel"
@@ -190,7 +194,7 @@ export default function Dashboard() {
                     </div>
                     <div className="col-lg-12">
                         <div className="row">
-                            <div className="col-lg-3">
+                            <div className="col-xl-3 col-lg-6">
                                 <div className="card">
                                     <div className="card-body">
                                         <div className="card-header-body">
@@ -212,7 +216,7 @@ export default function Dashboard() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-3">
+                            <div className="col-xl-3 col-lg-6">
                                 <div className="card">
                                     <div className="card-body">
                                         <div className="card-header-body">
@@ -234,7 +238,7 @@ export default function Dashboard() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-3">
+                            <div className="col-xl-3 col-lg-6">
                                 <div className="card">
                                     <div className="card-body">
                                         <div className="card-header-body">
@@ -256,7 +260,7 @@ export default function Dashboard() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-3">
+                            <div className="col-xl-3 col-lg-6">
                                 <div className="card">
                                     <div className="card-body">
                                         <div className="card-header-body">

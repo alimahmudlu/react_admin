@@ -4,10 +4,15 @@ import {faExclamationTriangle, faTimes} from "@fortawesome/free-solid-svg-icons"
 import {faTelegramPlane} from "@fortawesome/free-brands-svg-icons";
 import Pageheader from "../Pageheader";
 import Breadcrumb from "../Breadcrumb";
+import {Helmet} from "react-helmet";
+
 
 export default function Settings() {
     return (
         <>
+            <Helmet>
+                <title>Tənzimləmələr | Admin Panel</title>
+            </Helmet>
             <Pageheader
                 pageheader_header="Saytın əsas tənzimləmələri"
                 pageheader_description="Burdan saytın bütün tənzimləmələrini edə bilərsiniz"

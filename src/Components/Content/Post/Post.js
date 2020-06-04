@@ -5,10 +5,15 @@ import PostAdd from "./PostAdd";
 import PostCategoryList from "./PostCategory/PostCategorylist";
 import PostCategoryAdd from "./PostCategory/PostCategoryAdd";
 import PostCategoryEdit from "./PostCategory/PostCategoryEdit";
+import {Helmet} from "react-helmet";
+
 
 export default function Post() {
     return (
         <>
+            <Helmet>
+                <title>Postlar | Admin Panel</title>
+            </Helmet>
             <Route exact path="/post/">
                 <PostList/>
             </Route>

@@ -10,11 +10,15 @@ import Primarydetails from "./Primarydetails";
 import Contactdetails from "./Contactdetails";
 import Pageheader from "../Pageheader";
 import Breadcrumb from "../Breadcrumb";
-import Lolla from "./lol";
+import {Helmet} from "react-helmet";
+
 
 export default function Profile() {
     return (
         <>
+            <Helmet>
+                <title>İstifadəçi profili | Admin Panel</title>
+            </Helmet>
             <Pageheader
                 pageheader_header="İstifadəçi profili"
                 pageheader_description="İstifadəçi informasiyasının redaktəsi"

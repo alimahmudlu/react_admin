@@ -1,7 +1,9 @@
 {
-  "homepage": "http://alimahmudlu.github.io/react_admin/",
+  "homepage": "http://alimahmudlu.github.io/",
   "name": "react_admin",
-  "version": "0.1.0",
+  "author": "Əli Mahmudlu - Ali Mahmudlu",
+  "description": "My first React App",
+  "version": "1.0.1",
   "private": true,
   "dependencies": {
     "@analytics/google-analytics": "^0.4.0",
@@ -29,6 +31,7 @@
     "react-dropzone-uploader": "^2.11.0",
     "react-easy-crop": "^3.0.1",
     "react-fittext": "^1.0.0",
+    "react-helmet": "^6.0.0",
     "react-live-clock": "^4.0.5",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
