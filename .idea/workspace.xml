@@ -25,23 +25,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec67e4f1-31ae-4829-bff1-ff4b9d894ab9" name="Default Changelist" comment="update and add pages">
-      <change afterPath="$PROJECT_DIR$/src/Components/Content/Profile/lol.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Content/Profile/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/ScrollButton/Scrollbutton.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/ScrollButton/Scrollbutton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/defaultimg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/defaultimg.svg" afterDir="false" />
+    <list default="true" id="ec67e4f1-31ae-4829-bff1-ff4b9d894ab9" name="Default Changelist" comment="userprofile image change update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Content/Profile/Owndetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/Profile/Owndetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Content/Profile/Profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/Profile/Profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Content/Profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/Profile/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Content/User/Newuser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/User/Newuser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Homepage/Homepage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Homepage/Homepage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Navbar/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Navbar/Navbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Sidebar/Sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Sidebar/Sidebar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +125,8 @@
       <workItem from="1590683352660" duration="12950000" />
       <workItem from="1590739109266" duration="22000" />
       <workItem from="1590763807089" duration="1226000" />
-      <workItem from="1590824916282" duration="14618000" />
+      <workItem from="1590824916282" duration="16506000" />
+      <workItem from="1591196699585" duration="642000" />
     </task>
     <task id="LOCAL-00001" summary="update and add pages">
       <created>1590429423606</created>
@@ -177,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590706514370</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="userprofile image change update">
+      <created>1590845998377</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1590845998377</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +203,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="update and add pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="update and add pages" />
+    <MESSAGE value="userprofile image change update" />
+    <option name="LAST_COMMIT_MESSAGE" value="userprofile image change update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="841" y="445" width="298" height="231" key="#ESLint" timestamp="1590683381500">
@@ -241,26 +235,26 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="744" y="233" width="491" height="647" key="Github.UntrackedFilesDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1590396166554" />
-    <state width="1804" height="191" key="GridCell.Tab.0.bottom" timestamp="1590829198674">
+    <state width="1804" height="191" key="GridCell.Tab.0.bottom" timestamp="1591205312848">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="191" key="GridCell.Tab.0.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1590829198674" />
-    <state width="1804" height="191" key="GridCell.Tab.0.center" timestamp="1590829198672">
+    <state width="1804" height="191" key="GridCell.Tab.0.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1591205312848" />
+    <state width="1804" height="191" key="GridCell.Tab.0.center" timestamp="1591205312847">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="191" key="GridCell.Tab.0.center/70.27.1850.1053@70.27.1850.1053" timestamp="1590829198672" />
-    <state width="1804" height="191" key="GridCell.Tab.0.left" timestamp="1590829198671">
+    <state width="1804" height="191" key="GridCell.Tab.0.center/70.27.1850.1053@70.27.1850.1053" timestamp="1591205312847" />
+    <state width="1804" height="191" key="GridCell.Tab.0.left" timestamp="1591205312847">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="191" key="GridCell.Tab.0.left/70.27.1850.1053@70.27.1850.1053" timestamp="1590829198671" />
-    <state width="1804" height="191" key="GridCell.Tab.0.right" timestamp="1590829198673">
+    <state width="1804" height="191" key="GridCell.Tab.0.left/70.27.1850.1053@70.27.1850.1053" timestamp="1591205312847" />
+    <state width="1804" height="191" key="GridCell.Tab.0.right" timestamp="1591205312848">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="191" key="GridCell.Tab.0.right/70.27.1850.1053@70.27.1850.1053" timestamp="1590829198673" />
-    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1590706777383">
+    <state width="1804" height="191" key="GridCell.Tab.0.right/70.27.1850.1053@70.27.1850.1053" timestamp="1591205312848" />
+    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1590846126369">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.1850.1053@70.27.1850.1053" timestamp="1590706777383" />
+    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.1850.1053@70.27.1850.1053" timestamp="1590846126369" />
     <state x="659" y="196" width="672" height="676" key="search.everywhere.popup" timestamp="1590825746978">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
