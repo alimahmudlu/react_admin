@@ -40,8 +40,8 @@ export default function Contact() {
     return (
         <>
             <Pageheader
-                pageheader_header="Contact"
-                pageheader_description="Contact Edit"
+                pageheader_header="Əlaqə səhifəsini tənzimlə"
+                pageheader_description="Əlaqə səhifəsini tənzimlərkən diqqətli olun. Etdiyiniz səhv sayt strukturunu poza bilər!"
                 pageheader_icon="fas fa-address-book"
             />
             <Breadcrumb/>

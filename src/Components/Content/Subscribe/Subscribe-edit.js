@@ -40,7 +40,7 @@ export default function SubscribeEdit() {
     return (
         <>
             <Pageheader
-                pageheader_header="Abunə ol səhifəsini tənsizmlə"
+                pageheader_header="Abunə ol səhifəsini tənzimlə"
                 pageheader_description="Abunə ol səhifəsini tənzimlərkən diqqətli olun. Etdiyiniz səhv sayt strukturunu poza bilər!"
                 pageheader_icon="fas fa-bell"
             />

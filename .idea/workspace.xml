@@ -27,6 +27,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ec67e4f1-31ae-4829-bff1-ff4b9d894ab9" name="Default Changelist" comment="userprofile image change update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Content/Breadcrumb.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/Breadcrumb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Content/Contact/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/Contact/Contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Content/Subscribe/Subscribe-edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/Subscribe/Subscribe-edit.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +65,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -127,6 +132,7 @@
       <workItem from="1590763807089" duration="1226000" />
       <workItem from="1590824916282" duration="16506000" />
       <workItem from="1591196699585" duration="642000" />
+      <workItem from="1591294006514" duration="3132000" />
     </task>
     <task id="LOCAL-00001" summary="update and add pages">
       <created>1590429423606</created>
@@ -170,7 +176,21 @@
       <option name="project" value="LOCAL" />
       <updated>1590845998377</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update">
+      <created>1591294257714</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1591294257714</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update">
+      <created>1591294613191</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1591294613191</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,7 +224,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="update and add pages" />
     <MESSAGE value="userprofile image change update" />
-    <option name="LAST_COMMIT_MESSAGE" value="userprofile image change update" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="841" y="445" width="298" height="231" key="#ESLint" timestamp="1590683381500">
@@ -251,10 +272,10 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state width="1804" height="191" key="GridCell.Tab.0.right/70.27.1850.1053@70.27.1850.1053" timestamp="1591205312848" />
-    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1590846126369">
+    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1591294732321">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.1850.1053@70.27.1850.1053" timestamp="1590846126369" />
+    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.1850.1053@70.27.1850.1053" timestamp="1591294732321" />
     <state x="659" y="196" width="672" height="676" key="search.everywhere.popup" timestamp="1590825746978">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>

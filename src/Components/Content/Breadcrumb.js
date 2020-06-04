@@ -15,7 +15,7 @@ export default function Breadcrumb() {
 
     return (
         <>
-            <nav aria-label="breadcrumb">
+{/*            <nav aria-label="breadcrumb">
                 <ol className="breadcrumb">
                     <Link to="/" className="breadcrumb-item">
                         <FontAwesomeIcon icon={faHome} className="icon breadcrumb-item--icon"/>
@@ -37,7 +37,7 @@ export default function Breadcrumb() {
                         </>
                     }
                 </ol>
-            </nav>
+            </nav>*/}
         </>
     )
 }
