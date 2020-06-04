@@ -16,7 +16,7 @@ function Homepage() {
     }
     return (
         <>
-            <Router forceRefresh={false} basename="/">
+            <Router forceRefresh={false} basename="/react_admin/">
                 <Switch>
                     <Route path="/login">
                         <Login/>
