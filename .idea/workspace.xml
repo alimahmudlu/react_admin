@@ -26,6 +26,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec67e4f1-31ae-4829-bff1-ff4b9d894ab9" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/build/precache-manifest.396db82e10fd25c07e61db2df6790076.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/js/main.cb2eaf32.chunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/js/main.cb2eaf32.chunk.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/js/runtime-main.4c448b05.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/js/runtime-main.4c448b05.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/precache-manifest.9beb2ea4086aa2d517d932ad0425497b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.123f16a1.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.123f16a1.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.b0e92717.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.b0e92717.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Homepage/Homepage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Homepage/Homepage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +144,8 @@
       <workItem from="1590763807089" duration="1226000" />
       <workItem from="1590824916282" duration="16506000" />
       <workItem from="1591196699585" duration="642000" />
-      <workItem from="1591294006514" duration="6293000" />
+      <workItem from="1591294006514" duration="8841000" />
+      <workItem from="1591435616260" duration="387000" />
     </task>
     <task id="LOCAL-00001" summary="update and add pages">
       <created>1590429423606</created>
@@ -214,7 +231,21 @@
       <option name="project" value="LOCAL" />
       <updated>1591304506184</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="update">
+      <created>1591304555460</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1591304555460</updated>
+    </task>
+    <task id="LOCAL-00014" summary="update">
+      <created>1591304615847</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1591304615847</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,26 +311,26 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="744" y="233" width="491" height="647" key="Github.UntrackedFilesDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1590396166554" />
-    <state width="1804" height="191" key="GridCell.Tab.0.bottom" timestamp="1591301527712">
+    <state width="1804" height="191" key="GridCell.Tab.0.bottom" timestamp="1591307529136">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="191" key="GridCell.Tab.0.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1591301527712" />
-    <state width="1804" height="191" key="GridCell.Tab.0.center" timestamp="1591301527710">
+    <state width="1804" height="191" key="GridCell.Tab.0.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1591307529136" />
+    <state width="1804" height="191" key="GridCell.Tab.0.center" timestamp="1591307529136">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="191" key="GridCell.Tab.0.center/70.27.1850.1053@70.27.1850.1053" timestamp="1591301527710" />
-    <state width="1804" height="191" key="GridCell.Tab.0.left" timestamp="1591301527709">
+    <state width="1804" height="191" key="GridCell.Tab.0.center/70.27.1850.1053@70.27.1850.1053" timestamp="1591307529136" />
+    <state width="1804" height="191" key="GridCell.Tab.0.left" timestamp="1591307529136">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="191" key="GridCell.Tab.0.left/70.27.1850.1053@70.27.1850.1053" timestamp="1591301527709" />
-    <state width="1804" height="191" key="GridCell.Tab.0.right" timestamp="1591301527711">
+    <state width="1804" height="191" key="GridCell.Tab.0.left/70.27.1850.1053@70.27.1850.1053" timestamp="1591307529136" />
+    <state width="1804" height="191" key="GridCell.Tab.0.right" timestamp="1591307529136">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="191" key="GridCell.Tab.0.right/70.27.1850.1053@70.27.1850.1053" timestamp="1591301527711" />
-    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1591304513335">
+    <state width="1804" height="191" key="GridCell.Tab.0.right/70.27.1850.1053@70.27.1850.1053" timestamp="1591307529136" />
+    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1591304619082">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.1850.1053@70.27.1850.1053" timestamp="1591304513335" />
+    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.1850.1053@70.27.1850.1053" timestamp="1591304619082" />
     <state x="659" y="196" width="672" height="676" key="search.everywhere.popup" timestamp="1590825746978">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
