@@ -11,9 +11,9 @@ import {
     faPhone
 } from "@fortawesome/free-solid-svg-icons";
 import {Link} from "react-router-dom";
-import {faFacebook} from "@fortawesome/free-brands-svg-icons";
 
-export default function Sidebar() {
+export default function Sidebar(props) {
+    const {sidebarClosed} = props;
     return (
         <>
             <div className="sidebar sidebar-dark sidebar-main sidebar-expand-lg">
@@ -22,10 +22,10 @@ export default function Sidebar() {
                         <ul className="nav nav-sidebar" data-nav-type="accordion">
                             <li className="nav-item-header d-none">
                                 <div className="text-uppercase font-size-xs line-height-xs">Main</div>
-                                <FontAwesomeIcon icon={faFacebook} className="icon"/>
+                                <FontAwesomeIcon icon={faHome} className="icon"/>
                             </li>
                             <li className="nav-item">
-                                <Link to="/" className="nav-link">
+                                <Link to="/" className="nav-link" onClick={sidebarClosed}>
                                     <FontAwesomeIcon icon={faHome} className="icon"/>
                                     <span>
 									    Dashboard
@@ -41,12 +41,12 @@ export default function Sidebar() {
                                 </a>
                                 <ul className="nav nav-group-sub collapse" id="category_menu">
                                     <li className="nav-item">
-                                        <Link to="/category" className="nav-link">
+                                        <Link to="/category" className="nav-link"  onClick={sidebarClosed}>
                                             Category List
                                         </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to="/category/add" className="nav-link">
+                                        <Link to="/category/add" className="nav-link" onClick={sidebarClosed}>
                                             Add Category
                                         </Link>
                                     </li>
@@ -61,12 +61,12 @@ export default function Sidebar() {
                                 </a>
                                 <ul className="nav nav-group-sub collapse" id="pages_menu">
                                     <li className="nav-item">
-                                        <Link to="/pages" className="nav-link">
+                                        <Link to="/pages" className="nav-link" onClick={sidebarClosed}>
                                             Pages List
                                         </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to="/pages/add" className="nav-link">
+                                        <Link to="/pages/add" className="nav-link" onClick={sidebarClosed}>
                                             Add Page
                                         </Link>
                                     </li>
@@ -81,22 +81,22 @@ export default function Sidebar() {
                                 </a>
                                 <ul className="nav nav-group-sub collapse" id="post_menu">
                                     <li className="nav-item">
-                                        <Link to="/post" className="nav-link">
+                                        <Link to="/post" className="nav-link" onClick={sidebarClosed}>
                                             Post List
                                         </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to="/post/add" className="nav-link">
+                                        <Link to="/post/add" className="nav-link" onClick={sidebarClosed}>
                                             Add Post
                                         </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to="/post/category" className="nav-link">
+                                        <Link to="/post/category" className="nav-link" onClick={sidebarClosed}>
                                             Post Kateqoiyası Listi
                                         </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to="/post/categoryadd" className="nav-link">
+                                        <Link to="/post/categoryadd" className="nav-link" onClick={sidebarClosed}>
                                             Post Kateqoiyası əlavə et
                                         </Link>
                                     </li>
@@ -111,19 +111,19 @@ export default function Sidebar() {
                                 </a>
                                 <ul className="nav nav-group-sub collapse" id="subscribe_menu">
                                     <li className="nav-item">
-                                        <Link to="/subscribe" className="nav-link">
+                                        <Link to="/subscribe" className="nav-link" onClick={sidebarClosed}>
                                             Subscribe List
                                         </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to="/subscribe/edit" className="nav-link">
+                                        <Link to="/subscribe/edit" className="nav-link" onClick={sidebarClosed}>
                                             Edit Subscribe
                                         </Link>
                                     </li>
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <Link to="/contact" className="nav-link">
+                                <Link to="/contact" className="nav-link" onClick={sidebarClosed}>
                                     <FontAwesomeIcon icon={faPhone} className="icon"/>
                                     <span>
 									    Contact
@@ -131,7 +131,7 @@ export default function Sidebar() {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/navbar" className="nav-link">
+                                <Link to="/navbar" className="nav-link" onClick={sidebarClosed}>
                                     <FontAwesomeIcon icon={faBars} className="icon"/>
                                     <span>
 									    Navbar

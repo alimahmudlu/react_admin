@@ -25,30 +25,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec67e4f1-31ae-4829-bff1-ff4b9d894ab9" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/build/precache-manifest.3d40aa7baa5e833e01777ddeb9793201.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/2.75b5a876.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/2.75b5a876.chunk.js.LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/2.75b5a876.chunk.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/main.172eacae.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/main.172eacae.chunk.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/runtime-main.1826f66f.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/runtime-main.1826f66f.js.map" afterDir="false" />
+    <list default="true" id="ec67e4f1-31ae-4829-bff1-ff4b9d894ab9" name="Default Changelist" comment="add breadcrumb">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/precache-manifest.396db82e10fd25c07e61db2df6790076.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/2.82245a3b.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/2.82245a3b.chunk.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/2.82245a3b.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.cb2eaf32.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.cb2eaf32.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.4c448b05.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.4c448b05.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Content/Breadcrumb.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/Breadcrumb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Homepage/Homepage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Homepage/Homepage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Sidebar/Sidebar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +132,7 @@
       <workItem from="1591196699585" duration="642000" />
       <workItem from="1591294006514" duration="8841000" />
       <workItem from="1591435616260" duration="2280000" />
-      <workItem from="1592741728334" duration="1716000" />
+      <workItem from="1592741728334" duration="3214000" />
     </task>
     <task id="LOCAL-00001" summary="update and add pages">
       <created>1590429423606</created>
@@ -266,7 +246,21 @@
       <option name="project" value="LOCAL" />
       <updated>1591436597575</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="add breadcrumb">
+      <created>1592743654929</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1592743654929</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add breadcrumb">
+      <created>1592743679227</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1592743679227</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,7 +295,8 @@
     <MESSAGE value="update and add pages" />
     <MESSAGE value="userprofile image change update" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="add breadcrumb" />
+    <option name="LAST_COMMIT_MESSAGE" value="add breadcrumb" />
   </component>
   <component name="WindowStateProjectService">
     <state x="841" y="445" width="298" height="231" key="#ESLint" timestamp="1590683381500">
@@ -332,26 +327,26 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="744" y="233" width="491" height="647" key="Github.UntrackedFilesDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1590396166554" />
-    <state width="1802" height="340" key="GridCell.Tab.0.bottom" timestamp="1592741944450">
+    <state width="1802" height="191" key="GridCell.Tab.0.bottom" timestamp="1592743541555">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="1804" height="191" key="GridCell.Tab.0.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1591307529136" />
-    <state width="1802" height="340" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1592741944450" />
-    <state width="1802" height="340" key="GridCell.Tab.0.center" timestamp="1592741944450">
+    <state width="1802" height="191" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1592743541555" />
+    <state width="1802" height="191" key="GridCell.Tab.0.center" timestamp="1592743541554">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="1804" height="191" key="GridCell.Tab.0.center/70.27.1850.1053@70.27.1850.1053" timestamp="1591307529136" />
-    <state width="1802" height="340" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1592741944450" />
-    <state width="1802" height="340" key="GridCell.Tab.0.left" timestamp="1592741944450">
+    <state width="1802" height="191" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1592743541554" />
+    <state width="1802" height="191" key="GridCell.Tab.0.left" timestamp="1592743541552">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="1804" height="191" key="GridCell.Tab.0.left/70.27.1850.1053@70.27.1850.1053" timestamp="1591307529136" />
-    <state width="1802" height="340" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1592741944450" />
-    <state width="1802" height="340" key="GridCell.Tab.0.right" timestamp="1592741944450">
+    <state width="1802" height="191" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1592743541552" />
+    <state width="1802" height="191" key="GridCell.Tab.0.right" timestamp="1592743541554">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="1804" height="191" key="GridCell.Tab.0.right/70.27.1850.1053@70.27.1850.1053" timestamp="1591307529136" />
-    <state width="1802" height="340" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1592741944450" />
+    <state width="1802" height="191" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1592743541554" />
     <state width="1802" height="340" key="GridCell.Tab.1.bottom" timestamp="1592741944451">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -400,11 +395,11 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="1802" height="340" key="GridCell.Tab.3.right/72.27.1848.1053@72.27.1848.1053" timestamp="1592741944452" />
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1591436603852">
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1592743686843">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.1850.1053@70.27.1850.1053" timestamp="1591304619082" />
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1591436603852" />
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1592743686843" />
     <state x="652" y="342" width="677" height="430" key="git4idea.merge.GitPullDialog" timestamp="1591435801916">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>

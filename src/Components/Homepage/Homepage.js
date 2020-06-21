@@ -14,6 +14,10 @@ function Homepage() {
     function toggle() {
         setVisible(!visible);
     }
+
+    function sidebarClosed() {
+        setVisible(true)
+    }
     return (
         <>
             <Router forceRefresh={false} basename="/adminpanel/">
@@ -28,7 +32,7 @@ function Homepage() {
                         <ScrollButton scrollStepInPx="20" delayInMs="16.66"/>
                         <Navbar toggle={toggle} visible={visible} setVisible={setVisible}/>
                         <div className={["page-content", visible ? "sidebar-xs" : ""].join(" ")}>
-                            <Sidebar toggle={toggle} visible={visible} setVisible={setVisible}/>
+                            <Sidebar sidebarClosed={sidebarClosed} toggle={toggle} visible={visible} setVisible={setVisible}/>
                             <Content/>
                         </div>
                         <Footer/>
