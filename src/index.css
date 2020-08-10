@@ -205,3 +205,6 @@ textarea.form-control {
 .slider--img {
     width: 100%;
 }
+.h-200 {
+    height: 500px;
+}

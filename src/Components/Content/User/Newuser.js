@@ -1,24 +1,36 @@
 import React, {useEffect, useState} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faExclamationTriangle, faPen, faPhone, faTimes, faUserCog, faUsers} from "@fortawesome/free-solid-svg-icons";
+import {
+    faCropAlt,
+    faExclamationTriangle,
+    faPen,
+    faPhone,
+    faTimes,
+    faUserCog,
+    faUsers
+} from "@fortawesome/free-solid-svg-icons";
 import {faFacebook, faTelegramPlane} from "@fortawesome/free-brands-svg-icons";
 import Pageheader from "../Pageheader";
 import Breadcrumb from "../Breadcrumb";
 import {Link} from "react-router-dom";
 import defaultimg from "../../../defaultimg.png";
 import {Helmet} from "react-helmet";
+import {StyledDemo} from "../Profile/crop";
 
 
 export default function Newuser() {
 
     const [selectedFile, setSelectedFile] = useState()
+    const [firstPreview, setFirstPreview] = useState(defaultimg)
     const [preview, setPreview] = useState(defaultimg)
+    const [modalShow, setModalShow] = React.useState(false);
 
     useEffect(() => {
         if (!selectedFile) {
             return
         }
         const objectUrl = URL.createObjectURL(selectedFile)
+        setFirstPreview(objectUrl)
         setPreview(objectUrl)
 
         return () => URL.revokeObjectURL(objectUrl)
@@ -157,10 +169,6 @@ export default function Newuser() {
                                     <div className="form-group required">
                                         <div className="label-group">
                                             <label htmlFor="userProfileInput">Profil şəkli</label>
-                                            <div className="custom-control custom-switch">
-                                                {/*<input type="checkbox" className="custom-control-input" id="fullname_switch"  />*/}
-                                                {/*<label className="custom-control-label" htmlFor="fullname_switch"> </label>*/}
-                                            </div>
                                         </div>
                                         <div className="custom-file d-none">
                                             <input  type="file" accept="image/*" className="custom-file-input" id="userProfileInput" onChange={onSelectFile} required />
@@ -174,9 +182,14 @@ export default function Newuser() {
                                                     <FontAwesomeIcon icon={faPen}/>
                                                 </label>
                                                 {preview !== defaultimg &&
-                                                <span className="profile-image-control-item" onClick={onRemove}>
-                                                    <FontAwesomeIcon icon={faTimes}/>
-                                                </span>
+                                                    <>
+                                                        <span className="profile-image-control-item" onClick={onRemove}>
+                                                            <FontAwesomeIcon icon={faTimes}/>
+                                                        </span>
+                                                        <span className="profile-image-control-item" data-toggle="modal" data-target="#exampleModal">
+                                                            <FontAwesomeIcon icon={faCropAlt}/>
+                                                        </span>
+                                                    </>
                                                 }
 
 
@@ -363,6 +376,18 @@ export default function Newuser() {
                         </div>
                     </div>
                 </form>
+            </div>
+
+
+
+            <div className="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal-dialog" role="document">
+                    <div className="modal-content">
+                        <div className="modal-body h-200" >
+                            <StyledDemo src={firstPreview} setPreview={setPreview}/>
+                        </div>
+                    </div>
+                </div>
             </div>
         </>
     )

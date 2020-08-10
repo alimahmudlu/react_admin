@@ -1,48 +1,50 @@
 import React, {useEffect, useState} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faPen, faTimes, faUserCog} from "@fortawesome/free-solid-svg-icons";
+import {faCropAlt, faPen, faTimes, faUserCog} from "@fortawesome/free-solid-svg-icons";
 import {faTelegramPlane} from "@fortawesome/free-brands-svg-icons";
 import person from "../../../person.jpg";
 import defaultimg from "../../../defaultimg.png";
+import {StyledDemo} from "./crop";
 
 export default function Owndetails() {
 
-    const [selectedFile, setSelectedFile] = useState()
-    const [preview, setPreview] = useState(person)
+        const [selectedFile, setSelectedFile] = useState()
+        const [firstPreview, setFirstPreview] = useState(person)
+        const [preview, setPreview] = useState(person)
 
-    useEffect(() => {
-        if (!selectedFile) {
-            return
+        useEffect(() => {
+            if (!selectedFile) {
+                return
+            }
+            const objectUrl = URL.createObjectURL(selectedFile)
+            setFirstPreview(objectUrl)
+            setPreview(objectUrl)
+
+            return () => URL.revokeObjectURL(objectUrl)
+        }, [selectedFile])
+
+        function onSelectFile(e) {
+            if (!e.target.files || e.target.files.length === 0) {
+                setSelectedFile()
+                return
+            }
+
+            setSelectedFile(e.target.files[0])
         }
-        const objectUrl = URL.createObjectURL(selectedFile)
-        setPreview(objectUrl)
 
-        return () => URL.revokeObjectURL(objectUrl)
-    }, [selectedFile])
-
-    function onSelectFile(e) {
-        if (!e.target.files || e.target.files.length === 0) {
-            setSelectedFile()
-            return
-        }
-
-
-        setSelectedFile(e.target.files[0])
-    }
-
-    function onRemove(e) {
-        setSelectedFile(undefined)
-        setPreview(defaultimg)
-
-        var inputfile = document.getElementById("userProfileInput");
-        inputfile.value = null;
-
-        if (!selectedFile) {
+        function onRemove(e) {
+            setSelectedFile(undefined)
             setPreview(defaultimg)
-            return
-        }
 
-    }
+            var inputfile = document.getElementById("userProfileInput");
+            inputfile.value = null;
+
+            if (!selectedFile) {
+                setPreview(defaultimg)
+                return
+            }
+
+        }
     return (
         <>
             <div className="card">
@@ -83,9 +85,14 @@ export default function Owndetails() {
                                                 <FontAwesomeIcon icon={faPen}/>
                                             </label>
                                             {preview !== defaultimg &&
-                                                <span className="profile-image-control-item" onClick={onRemove}>
-                                                    <FontAwesomeIcon icon={faTimes}/>
-                                                </span>
+                                                <>
+                                                    <span className="profile-image-control-item" onClick={onRemove}>
+                                                        <FontAwesomeIcon icon={faTimes}/>
+                                                    </span>
+                                                    <span className="profile-image-control-item" data-toggle="modal" data-target="#exampleModal">
+                                                        <FontAwesomeIcon icon={faCropAlt}/>
+                                                    </span>
+                                                </>
                                             }
 
 
@@ -153,6 +160,17 @@ export default function Owndetails() {
                             </button>
                         </div>
                     </form>
+                </div>
+            </div>
+
+            <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog"
+                 aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal-dialog" role="document">
+                    <div className="modal-content">
+                        <div className="modal-body h-200">
+                            <StyledDemo src={firstPreview} setPreview={setPreview}/>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
