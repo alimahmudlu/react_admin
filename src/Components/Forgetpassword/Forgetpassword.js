@@ -25,7 +25,6 @@ export default function Forgetpassword() {
                             </div>
                         </div>
                         <div className="card-body">
-                            <form>
                                 <div className="form-group form-group-feedback form-group-feedback-right">
                                     <input type="text" className="form-control" placeholder="Username" />
                                     <div className="form-control-feedback">
@@ -43,7 +42,6 @@ export default function Forgetpassword() {
                                         Daxil ol
                                     </Link>
                                 </div>
-                            </form>
                         </div>
                     </div>
                 </form>

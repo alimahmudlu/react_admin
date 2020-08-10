@@ -1,0 +1,32 @@
+.registration-page {
+    width: 60rem;
+    padding: 0 15px;
+}
+.registration-form {
+    /*width: 20rem;*/
+}
+.assistant {
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.assistant::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    background-color: #333333;
+}
+.assistant_text {
+    padding: 2px 15px;
+    background: #ffffff;
+    z-index: 2;
+}
+@media (max-width: 61rem) {
+    .registration-page {
+        width: 100%;
+    }
+}

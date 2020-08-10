@@ -7,6 +7,9 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Login from "../Login/Login";
 import Forgetpassword from "../Forgetpassword/Forgetpassword";
 import ScrollButton from "../ScrollButton/Scrollbutton";
+import Registration from "../Registration/Registration";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css"
 
 function Homepage() {
     const [visible, setVisible] = useState(true);
@@ -22,6 +25,9 @@ function Homepage() {
         <>
             <Router forceRefresh={false} basename="/adminpanel/">
                 <Switch>
+                    <Route path="/registration">
+                        <Registration/>
+                    </Route>
                     <Route path="/login">
                         <Login/>
                     </Route>

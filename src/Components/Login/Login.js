@@ -30,31 +30,42 @@ export default function Login() {
                             </div>
                         </div>
                         <div className="card-body">
-                            <form>
-                                <div className="form-group form-group-feedback form-group-feedback-left">
-                                    <input type="text" className="form-control" placeholder="Username" />
-                                    <div className="form-control-feedback">
-                                        <FontAwesomeIcon icon={faUser} className="icon text-muted"/>
-                                    </div>
+                            <div className="form-group form-group-feedback form-group-feedback-left">
+                                <input type="text" className="form-control" placeholder="Username" />
+                                <div className="form-control-feedback">
+                                    <FontAwesomeIcon icon={faUser} className="icon text-muted"/>
                                 </div>
-                                <div className="form-group form-group-feedback form-group-feedback-left">
-                                    <input type="password" className="form-control" placeholder="Password" />
-                                    <div className="form-control-feedback">
-                                        <FontAwesomeIcon icon={faUnlockAlt} className="icon text-muted"/>
-                                    </div>
+                            </div>
+                            <div className="form-group form-group-feedback form-group-feedback-left">
+                                <input type="password" className="form-control" placeholder="Password" />
+                                <div className="form-control-feedback">
+                                    <FontAwesomeIcon icon={faUnlockAlt} className="icon text-muted"/>
                                 </div>
-                                <div className="form-group ">
-                                    <button className="btn btn-primary d-block w-100">
-                                        Daxil ol
-                                        {/*<FontAwesomeIcon icon={faChevronRight} className="icon ml-2"/>*/}
-                                    </button>
+                            </div>
+                            <div className="form-group ">
+                                <button className="btn btn-primary d-block w-100">
+                                    Daxil ol
+                                    {/*<FontAwesomeIcon icon={faChevronRight} className="icon ml-2"/>*/}
+                                </button>
+                            </div>
+                            <div className="form-group ">
+                                <Link to="/forgetpassword" className="btn btn-link d-block w-100">
+                                    Forget Password
+                                </Link>
+                            </div>
+                            <div className="form-group">
+                                <div className="assistant">
+                                    <span className="assistant_text">
+                                        Don't you have an account yet?
+                                    </span>
                                 </div>
-                                <div className="form-group ">
-                                    <Link to="/forgetpassword" className="btn btn-link d-block w-100">
-                                        Forget Password
-                                    </Link>
-                                </div>
-                            </form>
+                            </div>
+                            <div className="form-group ">
+                                <Link to="/registration" className="btn btn-primary d-block w-100">
+                                    Registration
+                                    {/*<FontAwesomeIcon icon={faChevronRight} className="icon ml-2"/>*/}
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </form>
